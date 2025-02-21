@@ -1,0 +1,26 @@
+table{
+    font-family: arial;
+}
+
+th{
+    background-color: gray;
+}
+td{
+    background-color: rgb(227, 227, 227);
+    padding: 2px;
+}
+
+input[type="number"]{
+    background-color: yellow;
+    border: none;
+    max-width: 60px;
+    
+}
+
+#dol{
+    text-align: right;
+}
+
+#koniec{
+    background-color: orange;
+}

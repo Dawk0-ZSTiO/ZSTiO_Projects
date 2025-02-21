@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+
+        <tr><th>Nazwa</th><th>Cena</th><th>Ilość</th></tr>
+        <tr><td>Monitor</td><td>670</td><td><input min="0" type="number" id="Monitor"></td></tr>
+        <tr><td>Pamięć RAM</td><td>120</td><td><input min="0" type="number" id="RAM"></td></tr>
+        <tr><td>Procesor</td><td>875</td><td><input min="0" type="number" id="Procesor"></td></tr>
+        <tr><td>Płyta główna</td><td>358</td><td><input min="0" type="number" id="Plyta"></td></tr>
+        <tr><td id="dol" colspan="2"><input type="button" id="przycisk" value="Suma"></td><td id="koniec"><span id="wynik"></span></td></tr>
+
+        <script src="../src/tabelka.js"></script>
+</table>
+</body>
+</html>
