@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container mt-3">
+        <br />
+        <h1>Kontakt</h1>
+        <br />
+        <form action="/wyslijForm" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="labelStyle">Nazwisko
+                        <input type="text" class="form-control" name="nazwisko" required />
+                    </label>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="labelStyle">Imię
+                        <input type="text" class="form-control" name="imie" required />
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="labelStyle">Email
+                        <input type="email" class="form-control" name="email" required />
+                    </label>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="labelStyle">Telefon
+                        <input type="text" class="form-control" name="telefon" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required />
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="labelStyle">Miasto
+                        <input type="text" class="form-control" name="miasto" required />
+                    </label>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="labelStyle">Adres
+                        <input type="text" class="form-control" name="adres" required />
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary"> Wyślij </button>
+        </form>
+    </div>
+</body>
+
+</html>
