@@ -48,7 +48,27 @@
     </table>
 
     <script>
+        async function pobierzKsiazki() {
+            const res = await fetch('/api/ksiazki');
+            const ksiazki = await res.json();
+            const tbody = document.getElementById('tabela-body');
+            tbody.innerHTML = '';
 
+            ksiazki.forEach(k => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                <td>${k.id_ksiazki}</td>
+                <td>${k.Tytul}</td>
+                <td>${k.Autor}</td>
+                <td>${k.Gatunek}</td>
+                <td>${k.Rok_wydania}</td>
+                <td>${k.Cena}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        pobierzKsiazki();
     </script>
 </body>
 </html>
