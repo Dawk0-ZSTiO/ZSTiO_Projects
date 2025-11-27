@@ -17,7 +17,7 @@ const restauracjeSchema = new mongoose.Schema({
 
 const restauracjeModel = mongoose.model('Restaurants', restauracjeSchema, 'restaurants');
 
-app.get('/api/restaurants', (req, res) => {
+app.get('/restaurants', (req, res) => {
     const { city, cuisine } = req.query;
     let filter = {};
 
@@ -40,13 +40,9 @@ app.get('/api/restaurants', (req, res) => {
         });
 });
 
-app.get('/', (req, res) => {
-    res.send('<h1>API Restauracje</h1><p>Użyj /api/restaurants</p>');
-});
-
-// http://localhost:5555/api/restaurants
-// http://localhost:5555/api/restaurants?city=Warsaw
-// http://localhost:5555/api/restaurants?cuisine=Italian
+// http://localhost:5555/restaurants
+// http://localhost:5555/restaurants?city=Warsaw
+// http://localhost:5555/restaurants?cuisine=Italian
 
 
 app.listen(5555, () => {
